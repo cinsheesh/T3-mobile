@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="jarak_atas_layar">64dp</dimen>
+    <dimen name="margin_samping">24dp</dimen>
+    <dimen name="padding_konten">16dp</dimen>
+    <dimen name="padding_output">12dp</dimen>
+
+    <dimen name="spasi_form">12dp</dimen>
+    <dimen name="spasi_label">14dp</dimen>
+    <dimen name="spasi_hasil">24dp</dimen>
+
+    <dimen name="ukuran_teks_judul">22sp</dimen>
+    <dimen name="ukuran_teks_hasil">16sp</dimen>
+    <dimen name="ukuran_teks_tombol">15sp</dimen>
+    <dimen name="ukuran_teks_label">14sp</dimen>
+</resources>

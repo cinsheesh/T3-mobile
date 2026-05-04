@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/jarak_atas_layar"
+    android:paddingLeft="@dimen/margin_samping"
+    android:paddingRight="@dimen/margin_samping"
+    android:background="#121212"> <!-- Warna background dibuat lebih gelap -->
+
+    <TextView
+        android:id="@+id/tvHeader"
+        style="@style/GayaJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/title"/>
+
+    <LinearLayout
+        android:id="@+id/containerInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader"
+        android:layout_marginTop="@dimen/spasi_form"
+        android:background="#FAFAFA"
+        android:padding="@dimen/padding_konten">
+
+        <TextView
+            style="@style/GayaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_lengkap"/>
+
+        <EditText
+            android:id="@+id/form_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nama"
+            android:textSize="@dimen/ukuran_teks_label"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            style="@style/GayaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jenis_kelamin"
+            android:layout_marginTop="@dimen/spasi_label"/>
+
+        <RadioGroup
+            android:id="@+id/opsi_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/pilihanLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/laki_laki" />
+
+            <RadioButton
+                android:id="@+id/pilihanPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/perempuan" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/GayaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hobi"
+            android:layout_marginTop="@dimen/spasi_label"/>
+
+        <CheckBox
+            android:id="@+id/pilih_baca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hobi_membaca"/>
+
+        <CheckBox
+            android:id="@+id/pilih_coding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hobi_coding"/>
+
+        <CheckBox
+            android:id="@+id/pilih_gaming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hobi_gaming"/>
+
+        <Button
+            android:id="@+id/tombol_kirim"
+            style="@style/GayaTombol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tombol_tampilkan"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/teks_output"
+            style="@style/GayaHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hasil_hint"
+            android:layout_marginTop="@dimen/spasi_hasil"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

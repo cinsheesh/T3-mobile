@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="title">Form Pendaftaran</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="hint_nama">Masukan Nama...</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="hobi">Hobi</string>
+    <string name="hobi_membaca">Membaca</string>
+    <string name="hobi_coding">Coding</string>
+    <string name="hobi_gaming">Gaming</string>
+    <string name="tombol_tampilkan">Tampilkan</string>
+    <string name="hasil_hint">Hasil akan muncul disini...</string>
+</resources>
