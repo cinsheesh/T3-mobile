@@ -7,24 +7,32 @@
     android:paddingTop="@dimen/jarak_atas_layar"
     android:paddingLeft="@dimen/margin_samping"
     android:paddingRight="@dimen/margin_samping"
-    android:background="#121212"> <!-- Warna background dibuat lebih gelap -->
+    android:background="#121212">
 
-    <TextView
-        android:id="@+id/tvHeader"
-        style="@style/GayaJudul"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="@string/title"/>
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#4A5BFF"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            style="@style/GayaJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/title"/>
+    </com.google.android.material.card.MaterialCardView>
 
     <LinearLayout
         android:id="@+id/containerInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/tvHeader"
+        app:layout_constraintTop_toBottomOf="@id/cardHeader"
         android:layout_marginTop="@dimen/spasi_form"
         android:background="#FAFAFA"
         android:padding="@dimen/padding_konten">
@@ -80,18 +88,24 @@
             android:id="@+id/pilih_baca"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="32dp"
+            android:minWidth="0dp"
             android:text="@string/hobi_membaca"/>
 
         <CheckBox
             android:id="@+id/pilih_coding"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="32dp"
+            android:minWidth="0dp"
             android:text="@string/hobi_coding"/>
 
         <CheckBox
             android:id="@+id/pilih_gaming"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="32dp"
+            android:minWidth="0dp"
             android:text="@string/hobi_gaming"/>
 
         <Button
